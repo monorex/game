@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "object.h"
+#include "world.h"
 
 using namespace std;
 

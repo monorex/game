@@ -5,7 +5,9 @@ CONFIG -= qt
 
 SOURCES += \
         main.cpp \
-    object.cpp
+    object.cpp \
+    world.cpp
 
 HEADERS += \
-    object.h
+    object.h \
+    world.h
