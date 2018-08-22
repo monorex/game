@@ -6,8 +6,10 @@ CONFIG -= qt
 SOURCES += \
         main.cpp \
     object.cpp \
-    world.cpp
+    world.cpp \
+    character.cpp
 
 HEADERS += \
     object.h \
-    world.h
+    world.h \
+    character.h

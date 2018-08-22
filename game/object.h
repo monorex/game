@@ -10,14 +10,17 @@ public:
     Object(){}
     Object(World * myWorld);
     Object(string myName);
-    virtual ~Object(){}
+    Object(World * myWorld, string myName);
+    virtual ~Object(){ if(isDebug()) cout << "Object " << name << " is destroyed\n";}
 
     virtual void setName(string myName);
     virtual string getName();
     virtual void describe();
-private:
+    virtual bool isDebug();
+protected:
     string name;
-    World * myWorld;
+    World * myWorld = nullptr;
+    bool debug = true;
 };
 
 #endif // OBJECT_H

@@ -7,13 +7,17 @@ Object::Object(string myName){
 }
 
 string Object::getName(){
-    return name;
+    return this ->  name;
 }
 
 void Object::setName(string myName){
-    name = myName;
+    this -> name = myName;
 }
 
 void Object::describe(){
     cout << "This Object is " << name << endl;
+}
+
+bool Object::isDebug(){
+    return debug;
 }
