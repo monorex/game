@@ -18,7 +18,7 @@ public:
 protected:
     string Race;
     int age;
-    //int health;
+    int health;
 };
 
 #endif // CHARACTER_H
